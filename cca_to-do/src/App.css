@@ -1,0 +1,135 @@
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.input-container button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #00c9a7;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-container button:hover {
+  background: #00b894;
+}
+
+
+.task-list {
+  margin-top: 20px;
+}
+
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+}
+
+
+.task-item span {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+
+.buttons button {
+  margin-left: 6px;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buttons button:nth-child(1) {
+  background: #ffd166;
+}
+
+.buttons button:nth-child(1):hover {
+  background: #fcbf49;
+}
+
+.buttons button:nth-child(2) {
+  background: #ef476f;
+  color: white;
+}
+
+.buttons button:nth-child(2):hover {
+  background: #d62839;
+}
+
+.task-item input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    margin: 20px;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    margin-top: 10px;
+  }
+}
